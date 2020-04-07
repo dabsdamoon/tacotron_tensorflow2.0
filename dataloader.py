@@ -1,5 +1,4 @@
 ##### Get modules for dataloader
-
 import codecs
 import math
 import numpy as np
@@ -15,7 +14,6 @@ from utils import *
 from kor_text import *
 
 ##### Define Dataloader
-
 class DataLoader:
 
     def __init__(self, hp, maxlen = 200):
@@ -138,10 +136,12 @@ class DataLoader:
         
         return fpaths, text_lengths, texts
 
+    ##### Function for decoding bytes to integers (int32)
     def _decode_map(self, text):
         decoded = tf.io.decode_raw(text, out_type=tf.int32)
         return decoded
 
+    ##### Function for getting mel and linear(mag) spectrograms
     def _spectrogram_map(self, fpath):
         
         fname, mel, mag = tf.numpy_function(load_spectrograms, [fpath], [tf.string, tf.float32, tf.float32])
@@ -151,6 +151,7 @@ class DataLoader:
         
         return fname, mel, mag
 
+    ##### Function for mapping form filename string to actual spectrograms
     def _mapping(self, inputs):
         
         fpath = inputs[0]
