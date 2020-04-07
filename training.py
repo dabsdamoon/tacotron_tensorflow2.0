@@ -218,4 +218,4 @@ if __name__ == "__main__":
         hp.vocab = symbols
         dl = DataLoader(hp)
 
-    training(dl.loader, hp)
+    training(dl, hp)
