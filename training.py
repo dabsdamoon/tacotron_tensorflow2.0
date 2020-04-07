@@ -208,9 +208,7 @@ def training(dataloader, hp):
 if __name__ == "__main__":
 
     ##### Choose the source
-
-    # hp.source = "korean"
-
+    
     # Set hp.vocab; originally for LJSpeech (English) dataset. If Korean, symbols need to be changed
     if hp.source == "LJSpeech":
         dl = DataLoader(hp)
