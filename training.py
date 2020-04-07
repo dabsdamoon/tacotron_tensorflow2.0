@@ -1,3 +1,4 @@
+##### Import modules
 import glob
 import numpy as np
 import subprocess
@@ -5,16 +6,14 @@ import tensorflow as tf
 import time
 from tqdm import tqdm
 
-##### Import custom .py
+##### Import custom module
 from hyperparams import Hyperparams as hp
 from utils import *
 from dataloader import *
 from modules import *
 from kor_text.symbols import symbols
 
-
 ##### Define models
-
 def training(dataloader, hp):
     
     ##### Define encoder
@@ -65,7 +64,6 @@ def training(dataloader, hp):
     train_summary_writer = tf.summary.create_file_writer(hp.log_dir)
     
     ##### Training
-    
     while 1:
     
         print("===== Epoch: {}".format(n_epoch))
@@ -185,7 +183,6 @@ def training(dataloader, hp):
                     print('Time taken for every 100th batch: {} secn (total: {} batches)'.format(time.time() - start, step_index))
                     start = time.time()
 
-
             ##### Save model weights
             if step_index % 1000 == 0:
 
@@ -208,6 +205,7 @@ def training(dataloader, hp):
 if __name__ == "__main__":
 
     ##### Choose the source
+    # hp.source = "korean"
     
     # Set hp.vocab; originally for LJSpeech (English) dataset. If Korean, symbols need to be changed
     if hp.source == "LJSpeech":
@@ -216,4 +214,9 @@ if __name__ == "__main__":
         hp.vocab = symbols
         dl = DataLoader(hp)
 
+    ##### Choose type of attention mechanism; I chose monotonic normalized attention mechanism since it seems faster than regular one.
+    hp.use_monotonic = Ture
+    hp.normalize_attention = True
+    
+    ##### Train
     training(dl, hp)
