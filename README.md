@@ -2,6 +2,7 @@
 Implementation of tacotron (TTS) with Tensorflow 2.0
 
 ## Requirements
+* Python==3.7
 * Tensorflow >= 2.0.0
 * librosa
 * tqdm
