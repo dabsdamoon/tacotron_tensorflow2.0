@@ -215,7 +215,7 @@ if __name__ == "__main__":
         dl = DataLoader(hp)
 
     ##### Choose type of attention mechanism; I chose monotonic normalized attention mechanism since it seems faster than regular one.
-    hp.use_monotonic = Ture
+    hp.use_monotonic = True
     hp.normalize_attention = True
     
     ##### Train
