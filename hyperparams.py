@@ -1,12 +1,8 @@
 # -*- coding: utf-8 -*-
 #/usr/bin/python2
 '''
-Originally by kyubyong park. kbpark.linguist@gmail.com. 
-https://www.github.com/kyubyong/tacotron
-
 Edited by Dabin Moon (dabsdamoon@neowiz.com)
 https://github.com/dabsdamoon
-
 '''
 class Hyperparams:
 
@@ -16,10 +12,8 @@ class Hyperparams:
     
     ##### Whether to restore the most recent model
     restore = False
-    # restore = True # if True, it will continue to learn from the latest save checkpoint
 
     # pipeline
-    prepro = False  # if True, run `python prepro.py` first before running `python train.py`.
     vocab = "PE abcdefghijklmnopqrstuvwxyz'.?" # P: Padding E: End of Sentence
 
     # data
@@ -27,10 +21,8 @@ class Hyperparams:
     cleaners = "korean_cleaners" # cleaner to be used for tokenizing Korean
 
     data = "/home/dabsdamoon/w/projects/tacotron/LJ_data/LJSpeech-1.1"
-    # data_korean = "/home/dabsdamoon/w/projects/tacotron2/korean_speaker_npy_data"
     data_korean = "/home/dabsdamoon/w/projects/tacotron2/korean-single-speaker-speech-dataset"
 
-    test_data = "harvard_sentences.txt"
     max_duration = 10.0
 
     # signal processing
@@ -69,7 +61,7 @@ class Hyperparams:
 
     # training scheme
     lr = 0.001 # Initial learning rate.
-    log_dir = "log/8882"
+    log_dir = "log"
     model_dir = "model_saved"
     batch_size = 8
     batches_per_group = 32
@@ -78,4 +70,4 @@ class Hyperparams:
     min_tokens = 30  # originally 50 30 is good for korean; set the mininum length of Korean text to be used for training
     min_n_frame = 30*r  # min_n_frame = reduction_factor * min_iters
     max_n_frame = 200*r
-    frame_shift_ms=None      # hop_size=  sample_rate *  frame_shift_ms / 1000
+    frame_shift_ms=None # hop_size=  sample_rate *  frame_shift_ms / 1000
