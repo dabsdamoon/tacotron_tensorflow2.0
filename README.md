@@ -6,6 +6,7 @@ Training in Korean: https://github.com/hccho2/Tacotron2-Wavenet-Korean-TTS </br>
 Attention: https://www.tensorflow.org/tutorials/text/nmt_with_attention </br>
 
 Notice that I haven't used tensorflow_addon library since it doesn't seem to be fully compatible with Tensorflow >= 2.0.0. </br>
+Also, I added an option to choosen between regular and monotonic attention since monotonic attention shows faster convergences in both language cases. For more information about monotonic attention, visit https://arxiv.org/abs/1704.00784 or https://vimeo.com/240608543 if you prefer presentation </br>
 
 ## Requirements
 * Python=3.7
@@ -31,6 +32,8 @@ python training.py
 </code>
 </pre>
 
+## Result
+To show some example results, I trained with both English and Korean dataset applying Bahdanau monotonic attention with normalization.
 Results of training English data (LJSpeech) are given below: </br>
 ![Alt Text](https://github.com/dabsdamoon/gif_save/blob/master/tacotron_English.gif) </br>
 ![Alt Text](https://github.com/dabsdamoon/gif_save/blob/master/tacotron_English_mel.png)
@@ -46,6 +49,5 @@ Both algorithms have been trained for roughly 15 hours.
 
 ## Sample Synthesis
 
-## Result
 
 ## Notes
