@@ -17,6 +17,7 @@ Training in Korean: https://github.com/hccho2/Tacotron2-Wavenet-Korean-TTS </br>
 ## Data
 
 ## Training
+![Alt Text](https://github.com/dabsdamoon/gif_save/blob/master/tacotron_English.gif)
 
 ## Sample Synthesis
 
