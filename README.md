@@ -23,7 +23,8 @@ Results of training English data (LJSpeech) are given below: </br>
 ![Alt Text](https://github.com/dabsdamoon/gif_save/blob/master/tacotron_English.gif) </br>
 ![Alt Text](https://github.com/dabsdamoon/gif_save/blob/master/tacotron_English_mel.png)
 ![Alt Text](https://github.com/dabsdamoon/gif_save/blob/master/tacotron_English_linear.png) </br>
-
+</br>
+ 
 Results of training Korean data (KSS) are given below: </br>
 ![Alt Text](https://github.com/dabsdamoon/gif_save/blob/master/tacotron_Korean.gif) </br>
 ![Alt Text](https://github.com/dabsdamoon/gif_save/blob/master/tacotron_Korean_mel.png)
