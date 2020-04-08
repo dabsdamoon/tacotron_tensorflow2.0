@@ -21,12 +21,12 @@ For Korean, I've used KSS dataset (https://www.kaggle.com/bryanpark/korean-singl
 ## Training
 Results of training English data (LJSpeech) are given below: </br>
 ![Alt Text](https://github.com/dabsdamoon/gif_save/blob/master/tacotron_English.gif) </br>
-![Alt Text](https://github.com/dabsdamoon/gif_save/blob/master/tacotron_English_mel.png) </br>
+![Alt Text](https://github.com/dabsdamoon/gif_save/blob/master/tacotron_English_mel.png)
 ![Alt Text](https://github.com/dabsdamoon/gif_save/blob/master/tacotron_English_linear.png) </br>
 
-Results of training Korean data (KSS) are given below:
+Results of training Korean data (KSS) are given below: </br>
 ![Alt Text](https://github.com/dabsdamoon/gif_save/blob/master/tacotron_Korean.gif) </br>
-![Alt Text](https://github.com/dabsdamoon/gif_save/blob/master/tacotron_Korean_mel.png) </br>
+![Alt Text](https://github.com/dabsdamoon/gif_save/blob/master/tacotron_Korean_mel.png)
 ![Alt Text](https://github.com/dabsdamoon/gif_save/blob/master/tacotron_Korean_linear.png) </br>
 
 Both algorithms have been trained for roughly 15 hours.
