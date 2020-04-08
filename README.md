@@ -15,19 +15,19 @@ Training in Korean: https://github.com/hccho2/Tacotron2-Wavenet-Korean-TTS </br>
 * inflect
 
 ## Data
-For English, I've used LJSpeech 1.1 dataset (https://keithito.com/LJ-Speech-Dataset/).
-For Korean, I've used KSS dataset (https://www.kaggle.com/bryanpark/korean-single-speaker-speech-dataset).
+For English, I've used LJSpeech 1.1 dataset (https://keithito.com/LJ-Speech-Dataset/). </br>
+For Korean, I've used KSS dataset (https://www.kaggle.com/bryanpark/korean-single-speaker-speech-dataset). </br>
 
 ## Training
-Results of training English data (LJSpeech) are given below:
-![Alt Text](https://github.com/dabsdamoon/gif_save/blob/master/tacotron_English.gif)
-![Alt Text](https://github.com/dabsdamoon/gif_save/blob/master/tacotron_English_mel.png)
-![Alt Text](https://github.com/dabsdamoon/gif_save/blob/master/tacotron_English_linear.png)
+Results of training English data (LJSpeech) are given below: </br>
+![Alt Text](https://github.com/dabsdamoon/gif_save/blob/master/tacotron_English.gif) </br>
+![Alt Text](https://github.com/dabsdamoon/gif_save/blob/master/tacotron_English_mel.png) </br>
+![Alt Text](https://github.com/dabsdamoon/gif_save/blob/master/tacotron_English_linear.png) </br>
 
 Results of training Korean data (KSS) are given below:
-![Alt Text](https://github.com/dabsdamoon/gif_save/blob/master/tacotron_Korean.gif)
-![Alt Text](https://github.com/dabsdamoon/gif_save/blob/master/tacotron_Korean_mel.png)
-![Alt Text](https://github.com/dabsdamoon/gif_save/blob/master/tacotron_Korean_linear.png)
+![Alt Text](https://github.com/dabsdamoon/gif_save/blob/master/tacotron_Korean.gif) </br>
+![Alt Text](https://github.com/dabsdamoon/gif_save/blob/master/tacotron_Korean_mel.png) </br>
+![Alt Text](https://github.com/dabsdamoon/gif_save/blob/master/tacotron_Korean_linear.png) </br>
 
 Both algorithms have been trained for roughly 15 hours.
 
