@@ -66,7 +66,7 @@ python synthesizing.py
 </code>
 </pre>
 
-For audio samples, I uploaded synthesized English sentence of "The boy was there when the sun rose" and Korean sentence of "오늘 점심은 쌀국수 한그릇 먹고싶네요". The algorithm has been trained 77000 steps for English (roughly 40 hours), and 67000 steps for Korean (roughly 15 hours). </br> 
+For audio samples, I uploaded synthesized English sentence of "The boy was there when the sun rose" and Korean sentence of "오늘 점심은 쌀국수 한그릇 먹고싶네요" in a folder "sample_synthesis". The algorithm has been trained 77000 steps for English (roughly 40 hours), and 67000 steps for Korean (roughly 15 hours). </br> 
 
 ## Notes
 * Although I tried to convert Kyubyoung's Tensorflow 1.12 code to Tensorflow 2.0 code as it is, there may be some differences between mine and Kyubyoung's. I'd appreciate if you notice differences and inform me. Also, since I directly implemented Kyubyoung's code, differences from the original paper are also implemented.
