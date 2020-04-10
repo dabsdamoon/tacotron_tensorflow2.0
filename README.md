@@ -49,14 +49,14 @@ Both algorithms have been trained for roughly 15 hours.
 
 ## Sample Synthesis
 
-First, set your parameters in hyperparams.py. Note that you need to set "use_monotonic" and "normalize_attention" parameter as True if you have trained the algorithm in such way. </br>
-Then, use the function "synthesizing" to generate the sentence you want. </br>
+First, set your parameters in hyperparams.py. Note that you need to set "use_monotonic" and "normalize_attention" parameter as True if you have trained the algorithm in such way. Then, use the function "synthesizing" to generate the sentence you want. </br>
 
 <pre>
 <code>
 synthesizing("The boy was there when the sun rose", hp)
+synthesizing("오늘 점심은 쌀국수 한그릇 먹고싶네요", hp)
 </code>
-<pre>
+</pre>
 
 Finally, run synthesizing.py with console command:
 
@@ -66,6 +66,11 @@ python synthesizing.py
 </code>
 </pre>
 
-For audio samples, I uploaded synthesized English sentence of "The boy was there when the sun rose" and Korean sentence of "오늘 점심은 쌀국수 한그릇 먹고싶네요". The algorithm has been trained 77000 steps for English (roughly 40 hours), and 67000 steps for Korean (roughly 15 hours. </br> 
+For audio samples, I uploaded synthesized English sentence of "The boy was there when the sun rose" and Korean sentence of "오늘 점심은 쌀국수 한그릇 먹고싶네요". The algorithm has been trained 77000 steps for English (roughly 40 hours), and 67000 steps for Korean (roughly 15 hours). </br> 
 
 ## Notes
+* Although I tried to convert Kyubyoung's Tensorflow 1.12 code to Tensorflow 2.0 code as it is, there may be some differences between mine and Kyubyoung's. I'd appreciate if you notice differences and inform me. Also, since I directly implemented Kyubyoung's code, differences from the original paper are also implemented.
+* As I have mentioned earlier, training Korean dataset takes quite less time than training English dataset. Thus, if you can understand both languages, you may notice that Korean synthesizing result sounds better than English one. The English result will be better if you spend more time on training.
+* Any comments on improving codes or questions are welcome, but it may take some time for me to respond.
+
+April 2020, Dabin Moon
