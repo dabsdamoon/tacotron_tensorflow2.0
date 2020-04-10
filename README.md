@@ -24,8 +24,8 @@ For Korean, I've used KSS dataset (https://www.kaggle.com/bryanpark/korean-singl
 
 ## Training
 
-First, set your parameters (including directory, language, etc) in hyperparams.py. </br>
-Then train a model using command: </br>
+First, set your parameters (including directory, language, etc) in hyperparams.py. For generating examples, I set "use_monotonic" and "normalize_attention" parameter as True. </br>
+Then, you can just run training.py file as follows: </br>
 <pre>
 <code> 
 python training.py 
@@ -49,5 +49,23 @@ Both algorithms have been trained for roughly 15 hours.
 
 ## Sample Synthesis
 
+First, set your parameters in hyperparams.py. Note that you need to set "use_monotonic" and "normalize_attention" parameter as True if you have trained the algorithm in such way. </br>
+Then, use the function "synthesizing" to generate the sentence you want. </br>
+
+<pre>
+<code>
+synthesizing("The boy was there when the sun rose", hp)
+</code>
+<pre>
+
+Finally, run synthesizing.py with console command:
+
+<pre>
+<code> 
+python synthesizing.py 
+</code>
+</pre>
+
+For audio samples, I uploaded synthesized English sentence of "The boy was there when the sun rose" and Korean sentence of "오늘 점심은 쌀국수 한그릇 먹고싶네요". The algorithm has been trained 77000 steps for English (roughly 40 hours), and 67000 steps for Korean (roughly 15 hours. </br> 
 
 ## Notes
