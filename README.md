@@ -1,4 +1,4 @@
-# Tacotron with Tensorflow 2
+# Tacotron with Tensorflow 2.0
 Implementation of tacotron (TTS) with Tensorflow 2.0.0 heavily inspired by: </br>
 
 General structure of algorithm: https://github.com/Kyubyong/tacotron </br>
